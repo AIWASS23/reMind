@@ -86,4 +86,3 @@ struct BoxEditorView_Previews: PreviewProvider {
         BoxEditorView(isPresented: .constant(true), editorType: .createNewBox)
     }
 }
-

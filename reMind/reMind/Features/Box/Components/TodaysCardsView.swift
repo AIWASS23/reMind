@@ -28,6 +28,7 @@ struct TodaysCardsView: View {
 
             Button(action: {
                 isSwippingActive.toggle() // Ativa a navegação para SwipperView
+                numberOfPendingCards += 1
             }, label: {
                 Text("Start Swiping")
                     .frame(maxWidth: .infinity)

@@ -47,7 +47,12 @@ class TermEditorModel: ObservableObject {
         }
         return true
     }
-    
+
+    func clearFields() {
+        term = ""
+        meaning = ""
+    }
+
     private func fieldsAreFilled() -> Bool {
         let filteredTerm = term.filter{ $0 != " " }
         let filteredMeaning = meaning.filter{ $0 != " " }
